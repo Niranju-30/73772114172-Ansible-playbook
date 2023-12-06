@@ -1,0 +1,11 @@
+---
+   - hosts: localhost
+    tasks:
+    -name: "create a directory named 73772114172"
+      file:
+        path: /home/linuxhelp/73772114172
+         state:directory
+     -name:"create a file on 73772114172 directory"
+       file:
+        path: /home/linuxhelp/73772114172.txt
+        state:touch
